@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    border: 1px solid lightgray;
+    padding: 45px;
+    background-color: #d4ccc2;
+    border-radius: 5px;
+}
+input{
+    height: 25px;
+  /* background-color: rgb(209, 223, 241); */
+  background-color: transparent;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid rgb(37, 32, 32);
+   outline: none;
+   padding-left: 10px;
+    
+}
+td{
+    padding: 5px 9px;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+}
+
+#success-message {
+    color: green;
+    text-align: center;
+}
+button{
+    
+    background-color: green!important;
+    padding: 10px 15px;
+    cursor: pointer;;
+    color: white;
+    border: none;
+border-radius: 5px;
+   
+   
+
+}

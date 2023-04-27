@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All Asignment</title>
+</head>
+<body>
+    <div class="container">
+       
+        
+        <div class="BillWrapper">
+            <center>                     
+            <table>
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th><h2>Resturant <br> E-Bill Desk</h2></th>
+                    <th></th>
+                    <th></th>
+                    <tr>                       
+                        <th>Sn.</th>
+                        <th>Item Name</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice1'></td>
+                        <td><input type="number" id="itemQuantity1"></td> 
+                        <td><p id="itemTotalAmt1"></p></td>                       
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice2'></td>
+                        <td><input type="number" id="itemQuantity2"></td> 
+                        <td><p id="itemTotalAmt2"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice3'></td>
+                        <td><input type="number" id="itemQuantity3"></td> 
+                        <td><p id="itemTotalAmt3"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice4'></td>
+                        <td><input type="number" id="itemQuantity4"></td> 
+                        <td><p id="itemTotalAmt4"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice5'></td>
+                        <td><input type="number" id="itemQuantity5"></td> 
+                        <td><p id="itemTotalAmt5"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice6'></td>
+                        <td><input type="number" id="itemQuantity6"></td> 
+                        <td><p id="itemTotalAmt6"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice7'></td>
+                        <td><input type="number" id="itemQuantity7"></td> 
+                        <td><p id="itemTotalAmt7"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice8'></td>
+                        <td><input type="number" id="itemQuantity8"></td> 
+                        <td><p id="itemTotalAmt8"></p></td> 
+                                            
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice9'></td>
+                        <td><input type="number" id="itemQuantity9"></td> 
+                        <td><p id="itemTotalAmt9"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td><input type="text" id="itemName"></td>
+                        <td> <input type="number"id='itemPrice10'></td>
+                        <td><input type="number" id="itemQuantity10"></td> 
+                        <td><p id="itemTotalAmt10"></p></td> 
+                                             
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> Select Discount:<select  id="Discount">
+                            <option value="0">Select Discount</option>
+                            <option value="5">5%</option>
+                            <option value="15">15%</option>
+                            <option value="20">20%</option>
+                        </select></td>
+                        <td> <button onclick="calculate()">Bill Pay</button> </td>
+                        <td><h2>Total</h2><br>After Discount Bill <br>  After Share Bill</td>
+                        <td><b><hr><p id="totalAmount">Before Discount</p> <hr>                      
+                               <p id="DiscountBill">No DiscOunt</p><hr>
+                                <p id="ShareBill">Single Pay</p>
+                                <hr>                         
+                            
+                        </b></td>                        
+                    </tr>
+                </tbody>               
+            </table>  
+            <h3>If You want to Bill devide in each Person Then </h3><br>
+            <input type="text" placeholder="No. of Person" id="valueDevider">
+            <br>
+            <button onclick="DevideBill()">Ok</button>
+           
+           
+        </center>   
+
+        </div>
+       
+       
+    </div>
+    
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>

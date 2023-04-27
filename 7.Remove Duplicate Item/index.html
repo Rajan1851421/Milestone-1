@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td id="showRes"></td>
+            </tr>
+        </table>
+        <table border="0">
+
+            <thead>
+                <tr>
+                    <th>Item No.</th>
+                    <th>Item Name</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>1:</td>
+                        <td><input type="text" placeholder="Enter item" id="FItem"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td><input type="text" placeholder="Enter item" id="SItem"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td><input type="text" placeholder="Enter item" id="TItem"></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td><input type="text" placeholder="Enter item" id="FrItem"></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td><input type="text" placeholder="Enter item" id="FifItem"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><Button onclick="addToCart0()">Add All Item</Button></td>
+                    </tr>
+                </tbody>
+            </thead>
+
+        </table>
+
+    </div><br>
+
+
+
+    <div class="container1">
+        
+        <table border="0">
+            
+            <thead>
+                <tr>
+                    <td></td>
+                    <td border="1"><p id="showResult"></p>
+                        <p id="showResult1"></p>
+                        <p id="showResult2"></p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>S.no</td>
+                    <td>Item Name</td>
+                    <td>Quantity</td>
+                    <td>Action</td>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" value="Shirt" readonly id="ClShirt"></td>
+                    <td><input type="number" id="shirt" value="0"></td>
+                    <td><button onclick="addToCart()">Add To Cart</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" value="Pant" readonly id="ClPant"></td>
+                    <td><input type="number" id="pant" value="0"></td>
+                    <td><button onclick="addToCart1()">Add To Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" value="Lower" readonly id="ClLower"></td>
+                    <td><input type="number" id="lower" value="0"></td>
+                    <td><button onclick="addToCart2()">Add To Cart</button></td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

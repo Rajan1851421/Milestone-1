@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    border: 0px solid;
+    padding: 40px;
+    border-radius: 10px;
+    height: 40%;
+    background-color: lightseagreen;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+input{
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+    text-transform: capitalize;
+
+}
+button{
+    padding: 5px 10px;
+    background-color: blue;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+}
+#ShowValidation{
+    color: red;
+}
+#todo-list{
+    text-transform: capitalize;
+}

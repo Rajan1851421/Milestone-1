@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgb(140, 159, 253) 0%, rgb(231, 137, 156) 45%);
+}
+Bank{
+   border: 1px solid;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: #e9f3b0;
+}
+hr{
+    margin-top: 20px;
+}
+h2{   
+    display: block;
+    text-align: center; 
+    margin-top: 20px;    
+    border-top: none;
+    border-left: none ;
+    border-right: none;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+label{
+    color: rgb(56, 55, 55);
+    font-weight: 800;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+    outline: lightcoral;
+    background-color: rgb(201, 222, 243);
+}
+button{
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    width: 90px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: rgb(72, 72, 250);
+    color: #fff;
+    cursor: pointer;
+}
+#creditBtn{
+    background-color: #008000 ;
+}
+#creditBtn:hover{
+    background-color: #013501;
+}
+#debitBtn{
+    background-color: #ff0000;
+}
+#debitBtn:hover{
+    background-color: #7c0303;
+}
+#creditBal{
+    color: green;
+    text-align: center;
+    font-weight: 400;
+    background-color: #b5f7b5;
+}
+#debitBal{
+    color: red;
+    text-align: center;
+    font-weight: 400;
+    background-color: rgb(241, 185, 185);
+}
+
+#currentBalance{
+    text-align: center;;
+    font-weight: 600;
+    border: none;
+    background-color: aquamarine;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+
+}
+
+#details{
+   
+    text-align: center;
+    font-weight: 400;
+}
+
+.statement th{
+    text-align: center;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      display: block;
+    }
+    tbody {
+      display: block;
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    tbody tr {
+      display: inline-block;
+      vertical-align: top;
+    }
+    tbody td {
+      display: inline-block;
+      width: 100px; /* Change this value to set the width of each cell */
+    }
+  }
+
+  

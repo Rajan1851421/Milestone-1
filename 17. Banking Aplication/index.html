@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Banking Application</title>
+</head>
+
+<body>
+    <Bank>
+        <h5>Customer Detail:</h5>
+        <table border="2" >
+            <tr>
+                <td>
+                    <label for="">Account Holader Name: </label>
+                </td>
+                <td>
+                    <input type="text" value="Rajan Prajapati" readonly>
+                </td>
+
+                <td>
+                    <label for="">Ac. Number     </label>
+
+                </td>
+                <td>
+                    <input type="number" value="917460033731" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">IFSC Code:  </label>
+                </td>
+                <td>
+                    <input type="text" value="PYTM0123456" readonly>
+                </td>
+                <td>
+                    <label for="">Oppening Balance :   </label>
+                </td>
+                <td>
+
+                    <input type="number" value="1000" readonly id="AvailBlance">
+                </td>
+            </tr>
+
+            <tr>
+               <td>
+                <label for="">Crdit:</label>
+               </td>
+               <td>
+                <input type="number" id="credit"><br><button onclick="HandleCredit()" id="creditBtn">Credit</button>
+               </td>
+        
+                <td>
+                    <label for="">Debit:</label>
+                </td>
+                <td>
+                    <input type="number" id="debit"><br><button onclick="HandleDebit()" id="debitBtn">Debit</button>
+                </td>
+            </tr>
+
+        </table>
+
+
+      
+        <hr>
+        <h2>Account Statement </h2>
+        <label for="">Available Balance:
+            <input id="currentBalance" value="1000" readonly></input>
+        </label>
+        
+        <div class="table-wrapper">
+            <h5>E-Statement:</h5>
+            <table border="2">
+                <thead>
+                    <tr class="statement">
+                        <th>Details</th>
+                        <th>Credit</th>
+                        <th>Debit</th>
+                    </tr>
+                    
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td id="details">Details</td>
+                        <td id="creditBal">Credit</td>
+                        <td id="debitBal">Debit</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+
+        </div>
+
+    </Bank>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="check.js"></script>
+</body>
+
+</html>

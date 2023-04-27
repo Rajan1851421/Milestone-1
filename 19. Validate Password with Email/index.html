@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form>
+        <p id="error-message"></p>
+        <p id="success-message"></p>
+
+        <table>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td> <input type="text" id="email" name="email" placeholder="Enter Your Email"><br></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+
+                <td>
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password"><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" onclick="validateForm(event)" >Submit</button>
+                 
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
